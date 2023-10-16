@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block 'body' %}
+<br>
+<br>
+<main class="d-flex justify-content-center" role="main">
+    <section class="jumbotron text-center border" style="width: 95%; background-color: transparent;">
+        <div class="container">
+            <h1 class="jumbotron-heading" style="color: white;">Projeto Pessoal</h1>
+            <p class="lead text" style="color: white;">Um pequeno projeto pessoal para aprendizado usando django
+                com foco em exibir informações relevantes sobre carros de varias marcas do mundo.
+            </p>
+        </div>
+    </section>
+</main>
+<main class="d-flex justify-content-center" role="main">
+    <section class="jumbotron text-center border" style="background-image: url('{{continente.imagem.url}}');
+    background-size: cover; width: 95%; background-color: transparent;">
+        <div class="container" style="width: 1000vw;">
+            <h1 class="jumbotron-heading" style="color: white;">Continentes</h1>
+            <p>
+                <a href="{% url 'continentes' %}" class="btn btn-primary my-2">Mostrar Continentes</a>
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

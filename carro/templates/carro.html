@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block 'body' %}
+<br>
+<br>
+<div class="container">
+    <div class="col-md-6" style="padding-left: 0px;  padding-right: 0px;">
+        <div class="media">
+            <img class="img-thumbnail" src="{{carro.imagem.url}}" alt="Responsive image">
+        </div>
+    </div>
+    <br>
+    <div class="container" style="padding-left: 0px;  padding-right: 0px;">
+        <table class="table table-dark table-striped table-bordered container">
+            <tbody>
+                <tr>
+                    <td>Nome:</td>
+                    <td>{{carro.nome}}</td>
+                </tr>
+                <tr>
+                    <td>Marca:</td>
+                    <td>{{carro.marca}}</td>
+                </tr>
+                <tr>
+                    <td>Ano:</td>
+                    <td>{{carro.ano}}</td>
+                </tr>
+                <tr>
+                    <td>Motor:</td>
+                    <td>{{carro.motor}}</td>
+                </tr>
+                <tr>
+                    <td>Decrição:</td>
+                    <td>{{carro.descricao}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
